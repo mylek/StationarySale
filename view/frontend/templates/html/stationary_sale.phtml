@@ -1,0 +1,11 @@
+<?php
+/** @var $block \MylSoft\StationarySale\Block\Product\StationarySales */
+/** @var \MylSoft\StationarySale\ViewModel\StationarySale **/
+
+$product = $block->getProduct();
+$viewModel = $block->getViewModel();
+?>
+
+<?php if($viewModel->getShow($product)): ?>
+    <div style="color: red; font-weight: bold;"><?= __('Stationary Sale') ?></div>
+<?php endif; ?>
